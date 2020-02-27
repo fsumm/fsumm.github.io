@@ -1,29 +1,27 @@
 @import url('');
 
 main {
-	margin-left: 5%;
-	margin-right: 15%;
-	margin-top: 5%;
-	margin-bottom: 10%;
-	min-width: 450px;
+	margin: 5% auto 10%;
+	min-width: 380px;
+	max-width: 480px;
 }
 
 h1 {
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Courier', 'Helvetica', 'Arial', sans-serif;
 	color: rgb(50,50,50);
 	font-size: 32px;
 	font-weight: bold;
 }
 
 h2 {
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Courier', 'Helvetica', 'Arial', sans-serif;
 	color: rgb(50,50,50);
 	font-size: 18px;
 	font-weight: bold;
 }
 
 h3 {
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Courier', 'Helvetica', 'Arial', sans-serif;
 	color: rgb(50,50,50);
 	font-size: 16px;
 	font-weight: bold;
@@ -32,7 +30,7 @@ h3 {
 }
 
 p, input {
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Courier', 'Helvetica', 'Arial', sans-serif;
 	font-size: 16px;
 	padding: 15px;
 	background: rgb(240,240,240);
@@ -62,14 +60,40 @@ hr {
 	border-color: none;
 }
 
+
+@media screen and (max-width: 560px) {
+	main {
+		margin: 5% 20px 10%;
+		min-width: 300;
+	}
+	p, input {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	p, input {
+		font-size: 12px;
+	}
+}
+
+
 /*
 FORMS
 */
 
+input::placeholder {
+	color: LightGray;
+}
+
+input:focus::placeholder {
+	color: gray;
+	transition: color 0.5s;
+}
+
 [type="text"] {
 	padding: 10px;
 	margin: 10px;
-	margin-bottom: 50px;
 	border-color: black;
 	border-radius: 10px;
 }
