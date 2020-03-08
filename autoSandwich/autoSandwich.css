@@ -1,0 +1,12 @@
+@import url('');
+
+[type="submit"] {
+	color: white;
+	background-color: black;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 40px;
+	border-width: 0px;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
