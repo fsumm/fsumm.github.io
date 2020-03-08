@@ -2,7 +2,7 @@
 autoSandwich
 by Felix Summ
 
-v.0.0.2
+v.0.0.3
 
 Made in the fall semester 2019 at
 Konstfack University of Arts, Crafts, and Design.
@@ -85,11 +85,6 @@ function setup() {
 //   // print(toppingSpacing)
 // }
 
-function windowResized() {
-  sandwichCanvas = resizeCanvas(windowWidth, windowHeight)
-  sandwichStart = windowHeight - 200
-}
-
 function saveImage() {
   save(sandwichCanvas, saveName + '.jpg')
   renderCount++
@@ -106,22 +101,22 @@ function greet() {
   saveName = String(name)
   
   // make seed
-  // nameArray = split(name, ',')
-  // print(unhex(nameArray[0]))
-  // nameVar1 = unhex(nameArray[0])
-  // print(nameVar1)
-  // nameVar2 = unhex(nameArray[nameArray.length - 1])
-  // if (nameVar1 === null) {
-  //   nameVar1 = unhex('a')
-  //   print('hi')
-  // }
-  // if (nameVar2 === null) {
-  //   nameVar2 = unhex('D')
-  // }
-  // nameSeed = nameVar1 + nameVar2 + name.length
+  nameArray = split(name, ',')
+  print(unhex(nameArray[0]))
+  nameVar1 = unhex(nameArray[0])
+  print(nameVar1)
+  nameVar2 = unhex(nameArray[nameArray.length - 1])
+  if (nameVar1 === null) {
+    nameVar1 = unhex('a')
+    print('hi')
+  }
+  if (nameVar2 === null) {
+    nameVar2 = unhex('D')
+  }
+  nameSeed = nameVar1 + nameVar2 + name.length
   
   // generate seed
-  nameSeed = 0
+  // nameSeed = 0
   
   if (name.includes("a") === true) {
     nameSeed+= 100
@@ -142,7 +137,7 @@ function greet() {
   nameSeed+= name.length + alphabet.indexOf(name[0])
   
   print(nameSeed)
-  //randomSeed(nameSeed)
+  randomSeed(nameSeed)
   
   // making the sandwich
   greeting.html('Here is your sandwich, ' + name + '!')
