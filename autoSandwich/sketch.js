@@ -2,7 +2,7 @@
 autoSandwich
 by Felix Summ
 
-v.0.0.3
+v.0.0.2
 
 Made in the fall semester 2019 at
 Konstfack University of Arts, Crafts, and Design.
@@ -84,6 +84,11 @@ function setup() {
 //   makeSandwich()
 //   // print(toppingSpacing)
 // }
+
+function windowResized() {
+  sandwichCanvas = resizeCanvas(windowWidth, windowHeight)
+  sandwichStart = windowHeight - 200
+}
 
 function saveImage() {
   save(sandwichCanvas, saveName + '.jpg')
