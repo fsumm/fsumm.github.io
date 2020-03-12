@@ -1,0 +1,98 @@
+@import url('');
+
+body {
+	background-color: black;
+	cursor: crosshair;
+}
+
+main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+
+@font-face {
+	font-family: Project Colony;
+    src: url(fonts/ProjectColonyGX.ttf);
+}
+
+h1 {
+	font-family: Project Colony;
+	font-variation-settings: 'THIC' var(--text-THIC);
+	font-size: 10vw;
+	text-transform: uppercase;
+	text-align: center;
+	--text-THIC: 200;
+	transition: font-variation-settings .3s ease-in,
+		color .3s ease-in;
+	display: inline;
+	color: white;
+	line-height: 0.74;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+h1:hover {
+	--text-THIC: 100;
+	/*background-color: gray;*/
+	color: red;
+	transition: font-variation-settings .1s ease-in,
+		background-color .1s ease-in, color .1s ease-in;
+}
+
+hr {
+	height: 20px;
+	border: 0px;
+}
+
+a, a:link, a:visited, a:active, a:-webkit-any-link {
+	text-decoration: none !important;
+}
+
+.push-down {
+	--text-THIC: 200;
+	transition: font-variation-settings .3s ease-out;
+}
+
+.push-down:hover {
+	--text-THIC: 100;
+	transition: font-variation-settings .5s ease-out;
+}
+
+#grape {
+	transition: font-variation-settings .3s, color .3s;
+}
+
+#grape:hover {
+	color: DarkOrchid;
+	transition: font-variation-settings .5s, color 1s;
+}
+
+#spacebar {
+	border-radius: 1vw;
+	height: 5vw;
+	width: 50vw;
+	margin-top: 5vw;
+	background-color: white;
+	display: inline-block;
+	transition: height .3s ease-in, background-color .3s ease-in,
+		margin-top .3s ease-in;
+}
+
+#spacebar:hover {
+	height: 4.5vw;
+	margin-top: 5.5vw;
+	background-color: red;
+	transition: height .1s ease-in, background-color .1s ease-in,
+		margin-top .1s ease-in;;
+}
+
+
+
+
+
+
+
+
+
