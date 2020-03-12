@@ -21,6 +21,7 @@ h1 {
 	font-family: Project Colony;
 	font-variation-settings: 'THIC' var(--text-THIC);
 	font-size: 10vw;
+	font-weight: normal;
 	text-transform: uppercase;
 	text-align: center;
 	--text-THIC: 200;
