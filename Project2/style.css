@@ -48,7 +48,7 @@ a, a:link, a:visited, a:active, a:-webkit-any-link {
 	transition: font-variation-settings .3s ease-out;
 }
 
-.push-down:hover {
+.push-down:hover, .push-down:active {
 	--text-THIC: 100;
 	transition: font-variation-settings .5s ease-out;
 }
@@ -89,7 +89,7 @@ KEYBOARD
 		margin-top .3s ease-in;
 }
 
-#spacebar:hover {
+#spacebar:hover, #spacebar:active {
 	height: 4.5vw;
 	margin-top: 5.5vw;
 	background-color: red;
@@ -101,11 +101,11 @@ KEYBOARD
 LARGE LETTER
 */
 
-#large_letter {
+#large-letter {
 	text-align: center;
 }
 
-#large_key {
+#large-key {
 	font-size: 50vw;
 	transition: font-variation-settings 5s, color .3s ease-in;
 }
@@ -147,12 +147,12 @@ WAVE
 	}
 }
 
-#wave_container {
+#wave-container {
 	text-align: center;
 	line-height: 0.6;
 }
 
-#wave_title {
+#wave-title {
 	font-size: 6vw;
 	font-variation-settings: 'THIC' 100;
 }
