@@ -1,18 +1,55 @@
 @import url('');
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'
+@font-face {
+	font-family: Project Colony;
+    src: url(fonts/ProjectColonyGX.ttf);
+}
+
+body {
+	background-color: black; 
+}
 
 h1 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: bolder;
+	font-family: Project Colony, sans-serif;
+	font-variation-settings: 'THIC' var(--text-THIC);
+	font-size: 10vw;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	--text-THIC: 200;
+	transition: font-variation-settings .3s ease-in,
+		color .3s ease-in;
+	display: inline;
+	color: white;
+	line-height: 0.74;
+	margin-left: 0em;
+	margin-right: 0em;
 }
 
-#messenger {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: monospace;
-  font-size: 20px;
-  white-space: nowrap;
-  text-shadow: 0 2px 2px rgba(#000, 0.9);
+h1:hover {
+	--text-THIC: 100;
+	color: white;
+	transition: font-variation-settings .1s ease-in,
+		background-color .1s ease-in, color .1s ease-in;
 }
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+.top_banner {
+	--text-THIC: 100;
+	text-align: right;
+	line-height: .5;
+}
+
+
+
+
+
+
+
+
+
+
+

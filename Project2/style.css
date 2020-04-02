@@ -9,12 +9,12 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
-	text-align: center;
+	
 }
 
 @font-face {
 	font-family: Project Colony;
-    src: url(fonts/ProjectColonyGX.ttf);
+    src: url(../fonts/ProjectColonyGX.ttf);
 }
 
 h1 {
@@ -23,23 +23,15 @@ h1 {
 	font-size: 10vw;
 	font-weight: normal;
 	text-transform: uppercase;
-	text-align: center;
 	--text-THIC: 200;
-	transition: font-variation-settings .3s ease-in,
-		color .3s ease-in;
-	display: inline;
 	color: white;
-	line-height: 0.74;
-	margin-left: 0em;
-	margin-right: 0em;
 }
 
-h1:hover {
-	--text-THIC: 100;
-	/*background-color: gray;*/
-	color: red;
-	transition: font-variation-settings .1s ease-in,
-		background-color .1s ease-in, color .1s ease-in;
+h3 {
+	font-size: 12px;
+	font-weight: normal;
+	color: white;
+	font-family: IBM Plex Mono, sans-serif;
 }
 
 hr {
@@ -61,13 +53,29 @@ a, a:link, a:visited, a:active, a:-webkit-any-link {
 	transition: font-variation-settings .5s ease-out;
 }
 
-#grape {
-	transition: font-variation-settings .3s, color .3s;
+/*
+KEYBOARD
+*/
+
+#keyboard {
+	text-align: center;
 }
 
-#grape:hover {
-	color: DarkOrchid;
-	transition: font-variation-settings .5s, color 1s;
+.key {
+	transition: font-variation-settings .3s ease-in,
+		color .3s ease-in;
+	display: inline;
+	line-height: 0.74;
+	margin-left: 0em;
+	margin-right: 0em;
+	text-align: center;
+}
+
+.key:hover {
+	--text-THIC: 100;
+	color: red;
+	transition: font-variation-settings .1s ease-in,
+		background-color .1s ease-in, color .1s ease-in;
 }
 
 #spacebar {
@@ -88,6 +96,190 @@ a, a:link, a:visited, a:active, a:-webkit-any-link {
 	transition: height .1s ease-in, background-color .1s ease-in,
 		margin-top .1s ease-in;;
 }
+
+/*
+LARGE LETTER
+*/
+
+#large_letter {
+	text-align: center;
+}
+
+#large_key {
+	font-size: 50vw;
+	transition: font-variation-settings 5s, color .3s ease-in;
+}
+
+/*
+WAVE
+*/
+
+@keyframes wave {
+	0% {
+    	font-variation-settings: 'THIC' 200;
+ 	}
+ 	20% {
+    	font-variation-settings: 'THIC' 100;
+ 	}
+  	70% {
+    	font-variation-settings: 'THIC' 100;
+  	}
+  	100% {
+  		font-variation-settings: 'THIC' 200;
+  	}
+}
+
+@keyframes cybercon {
+	0% {
+		color: black;
+	}
+	20% {
+		color: white;
+	}
+	70% {
+		color: white;
+	}
+	80% {
+		color: black;
+	}
+	100% {
+		color: black;
+	}
+}
+
+#wave_container {
+	text-align: center;
+	line-height: 0.6;
+}
+
+#wave_title {
+	font-size: 6vw;
+	font-variation-settings: 'THIC' 100;
+}
+
+.wave span:nth-child(1) {
+	animation: wave 8s infinite;
+	animation-delay: .5s;
+}
+.wave span:nth-child(2) {
+	animation: wave 8s infinite;
+	animation-delay: 1s;
+}
+.wave span:nth-child(3) {
+	animation: wave 8s infinite;
+	animation-delay: 1.5s;
+}
+.wave span:nth-child(4) {
+	animation: wave 8s infinite;
+	animation-delay: 2s;
+}
+.wave span:nth-child(5) {
+	color: black;
+	font-variation-settings: 'THIC' 100;
+	animation: cybercon 8s infinite;
+	animation-delay: 2.5s;
+	padding-top: 1vw;
+	padding-bottom: 4vw;
+	padding-left: 3.5vw;
+	padding-right: 3.5vw;
+	border-radius: 50%;
+	background-color: red;
+}
+
+/*
+TYPING
+*/
+
+/* Adapted from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.typewriter h3{
+	display: inline-block;
+  	overflow: hidden;
+  	border-right: orange;
+  	white-space: nowrap;
+  	margin: 0 auto;
+  	animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+.typewriter h3:nth-child(1) {
+	animation: 
+    typing 3.5s steps(40, end) alternate infinite,
+    blink-caret .75s step-end alternate infinite;
+}
+.typewriter h3:nth-child(2) {
+	animation: 
+    typing 3.5s steps(40, end) alternate infinite,
+    blink-caret .75s step-end alternate infinite;
+    animation-delay: .5s;
+}
+.typewriter h3:nth-child(3) {
+	animation: 
+    typing 3.5s steps(40, end) alternate infinite,
+    blink-caret .75s step-end alternate infinite;
+    animation-delay: 1s;
+}
+.typewriter h3:nth-child(4) {
+	animation: 
+    typing 3.5s steps(40, end) alternate infinite,
+    blink-caret .75s step-end alternate infinite;
+    animation-delay: 1.5s;
+}
+.typewriter h3:nth-child(5) {
+	animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-delay: 1.5s;
+}
+.typewriter h3:nth-child(6) {
+	animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-delay: 3s;
+}
+.typewriter h3:nth-child(7) {
+	animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-delay: 4s;
+}
+
+@keyframes typing {
+  	from { width: 0 }
+  	to { width: 100% }
+}
+
+@keyframes blink-caret {
+  	from, to { border-color: transparent }
+  	50% { border-color: orange; }
+}
+
+/*
+MEDIA
+*/
+
+@media screen and (max-width: 550px) {
+	h3 {
+		font-size: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
