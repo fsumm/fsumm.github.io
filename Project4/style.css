@@ -14,6 +14,11 @@ body {
     src: url(../fonts/AkzidenzGrotesk-MediumExtended.otf);
 }
 
+@font-face {
+	font-family: Akzidenz-Grotesk BQ Regular;
+	src: url(../fonts/AkzidenzGrotesk-Regular.otf);
+}
+
 nav{
 	text-align: right;
 	background-color: white;
@@ -91,7 +96,7 @@ h4 {
 }
 
 p {
-	font-family: Akzidenz-Grotesk BQ;
+	font-family: Akzidenz-Grotesk BQ Regular;
 	letter-spacing: 0.06em;
 	line-height: 1.1em;
 }
