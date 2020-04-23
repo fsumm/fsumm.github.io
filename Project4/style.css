@@ -372,6 +372,10 @@ BANNER TAGS
 	color: #191919;
 }
 
+#archive-h1 {
+	margin-bottom: 1em;
+}
+
 .about-content {
 	height: 100vh;
 	background: white;
