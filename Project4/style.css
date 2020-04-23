@@ -210,7 +210,30 @@ hr {
 }
 
 #article-text {
-	margin: 1em;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#article-text a, a:link, a:visited, a:active, a:-webkit-any-link {
+	text-decoration: none !important;
+	color: magenta;
+}
+
+#article-text h1 {
+	max-width: 70%;
+	color: #191919;
+}
+
+#article-text h4 {
+	max-width: 70%;
+	margin-bottom: -10px;
+}
+
+.lead-in {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 18px;
+	padding-bottom: 3em;
 }
 
 #feature-text p {
@@ -390,6 +413,11 @@ BANNER TAGS
 
 #about-text {
 	margin: 1em;
+}
+
+.footer {
+	color: white;
+	padding-bottom: 1.5em;
 }
 
 #footer {
