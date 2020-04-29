@@ -13,7 +13,6 @@
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
-        <script src="project2.js"></script>
 
     </head>
     <body>
@@ -49,13 +48,14 @@
     			</a>
     		</div>
     		<div id="filter">
-	    		<a class="button-link interview" href="archive.html">Interview</a>
-	    		<a class="button-link music" href="archive.html">Music</a>
-	    		<a class="button-link movies" href="archive.html">Movies</a>
-	    		<a class="button-link typography" href="archive.html">Typography</a>
+    			<a class="button-link filter-button branding active" onclick="filterSelection('all')">Show All</a>
+	    		<a class="button-link filter-button interview" onclick="filterSelection('interview-cat')">Interview</a>
+	    		<a class="button-link filter-button music" onclick="filterSelection('music-cat')">Music</a>
+	    		<a class="button-link filter-button movies" onclick="filterSelection('movies-cat')">Movies</a>
+	    		<a class="button-link filter-button typography" onclick="filterSelection('typography-cat')">Typography</a>
     		</div>
     		<div class="post-flex">
-	    		<div class="post">
+	    		<div class="post typography-cat movies-cat">
 	    			<a href="article.html">
 	    			<div class="post-img-container">
 	    			<img class="post-img" src="https://i2.wp.com/ilikeinterfaces.com/wp-content/uploads/2015/03/01_02_4600099.png?ssl=1">
@@ -68,7 +68,7 @@
 	    			</div>
 	    			</a>
 	    		</div>
-	    		<div class="post">
+	    		<div class="post typography-cat movies-cat">
 	    			<a href="article.html">
 	    			<div class="post-img-container">
 	    			<img class="post-img" src="https://typesetinthefuture.files.wordpress.com/2016/06/2001_station_welcome_full.jpg?w=1440">
@@ -81,7 +81,7 @@
 	    			</div>
 	    			</a>
 	    		</div>
-	    		<div class="post">
+	    		<div class="post interview-cat music-cat">
 	    			<a href="article.html">
 	    			<div class="post-img-container">
 	    			<img class="post-img" src="https://i.guim.co.uk/img/media/7e041eb53d08b2cca83dba6097eeeb00e5103dda/0_1541_5504_4785/master/5504.jpg?width=1900&quality=45&auto=format&fit=max&dpr=2&s=36f72411c1db37f31c6e370e2bb1f3f1">
@@ -94,7 +94,7 @@
 	    			</div>
 	    			</a>
 	    		</div>
-	    		<div class="post">
+	    		<div class="post typography-cat movies-cat">
 	    			<a href="article.html">
 	    			<div class="post-img-container">
 	    			<img class="post-img" src="https://www.typemag.org/images/uploads/collage-social.jpg">
@@ -107,7 +107,7 @@
 	    			</div>
 	    			</a>
 	    		</div>
-	    		<div class="post">
+	    		<div class="post music-cat">
 	    			<a href="article.html">
 	    			<div class="post-img-container">
 	    			<img class="post-img" src="https://rhizome.org/static-media/blog/10376e8d-714b-4759-b183-aa1e1b4b035d.jpg">
@@ -137,6 +137,7 @@
     		<hr>
     		<hr>
     	</main>
+    	<script src="project4.js"></script>
     </body>
 </html>
 
