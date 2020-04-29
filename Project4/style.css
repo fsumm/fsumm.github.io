@@ -116,6 +116,10 @@ MEDIA QUERIES
 		width: 100%;
 	}
 
+	#feature-text p {
+		max-width: 100% !important;
+	}
+
 	.banner {
 		top: -12px !important;
 		height: 12px;
@@ -349,6 +353,8 @@ MEDIA QUERIES
 	margin: 10px;
 	margin-bottom: 10px;
 	width: 25vw;
+	background: white;
+    border-radius: 11px;
 }
 
 .feature img, .post img {
