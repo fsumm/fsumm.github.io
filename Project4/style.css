@@ -144,6 +144,12 @@ hr {
 
 /*--------------- MEDIA QUERIES ---------------*/
 
+@media screen and (max-width: 400px) {
+	.post {
+	    min-width: 200px;
+	}
+}
+
 @media screen and (max-width: 659px) {
 
 	.feature {
