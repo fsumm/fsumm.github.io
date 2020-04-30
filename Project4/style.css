@@ -201,6 +201,10 @@ hr {
 	.post-img-container {
     	height: 110px !important;
     }
+
+    .about-content {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
