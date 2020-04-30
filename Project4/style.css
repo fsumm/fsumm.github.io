@@ -101,6 +101,7 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	color: #191919;
+	hyphens: auto;
 }
 
 h4 {
