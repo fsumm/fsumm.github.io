@@ -19,7 +19,18 @@ body {
 	src: url(../fonts/AkzidenzGrotesk-Regular.otf);
 }
 
+@font-face {
+	font-family: Akzidenz-Grotesk BQ Medium;
+	src: url(../fonts/AkzidenzGrotesk-Medium.otf);
+}
+
+@font-face {
+	font-family: Project Colony;
+	src: url(../fonts/ProjectColonyGX.ttf);
+}
+
 nav{
+	border-top: 7px solid magenta;
 	text-align: right;
 	background-color: white;
 	margin-top: -12px;
@@ -64,16 +75,19 @@ main {
 }
 
 h1 {
-	font-family: Akzidenz-Grotesk BQ Bold Extended;
+	font-family: Project Colony, Akzidenz-Grotesk BQ Bold Extended;
+	/*font-family: Akzidenz-Grotesk BQ Bold Extended;*/
 	font-size: 2em;
-	font-weight: normal;
+	/*font-weight: normal;*/
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	color: white;
+	line-height: .75em;
 }
 
 h2 {
-	font-family: Akzidenz-Grotesk BQ Medium Extended;
+	font-family: Project Colony;
+	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 1.5em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -81,7 +95,8 @@ h2 {
 }
 
 h3 {
-	font-family: Akzidenz-Grotesk BQ Medium Extended;
+	font-family: Project Colony;
+	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -89,16 +104,18 @@ h3 {
 }
 
 h4 {
-	font-family: Akzidenz-Grotesk BQ Medium Extended;
+	font-family: Project Colony;
+	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	color: gray;
+	line-height: 1em;
 }
 
 p {
 	font-family: Akzidenz-Grotesk BQ Regular;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.02em;
 	line-height: 1.1em;
 }
 
@@ -107,9 +124,25 @@ hr {
 	border: 0px;
 }
 
+.divider {
+	border-top: 1px solid #191919;
+}
+
+#main-head h1 {
+	letter-spacing: 0.075em;
+}
+
+#nav-content {
+	margin-top: -12px;
+}
+
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media screen and (max-width: 659px) {
+
+	.feature {
+		max-width: 100% !important;
+	}
 
 	#feature-img {
 		width: 100%;
@@ -129,11 +162,23 @@ hr {
 		height: 12px;
 	}
 
+	.post {
+	    max-width: none !important;
+	}
+
 	.post-text .banner:nth-child(2n) {
     	top: -24px !important;
 	}
 
 	.post-text .banner:nth-child(3n) {
+		top: -36px !important;
+	}
+
+	#article-text-container .banner:nth-child(2n) {
+		top: -24px !important;
+	}
+
+	#article-text-container .banner:nth-child(3n) {
 		top: -36px !important;
 	}
 
@@ -185,7 +230,8 @@ hr {
 }
 
 .button-link {
-	font-family: Akzidenz-Grotesk BQ Medium Extended;
+	font-family: Project Colony;
+	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -242,6 +288,14 @@ hr {
 
 /*--------------- FEATURE ---------------*/
 
+#info {
+	max-width: 33%;
+}
+
+.feature {
+	max-width: 66%;
+}
+
 .feature p {
 	color: #191919;
 }
@@ -256,16 +310,15 @@ hr {
 }
 
 .feature-banner h3 {
-	padding-left: 3em;
-	padding-top: 1em;
+	padding-left: 50px;
+	padding-top: 1.5em;
+    padding-bottom: .8em;
 }
 
 #feature-text-container, #article-text-container {
 	position: relative;
-	margin-top: -20px;
-	margin-bottom: 20px;
 	background-color: white;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px, 0px, 10px, 10px;
 }
 
 #feature-text-container {
@@ -273,6 +326,7 @@ hr {
 }
 
 #article-text-container {
+	position: relative;
 	padding-top: 1em;
 	padding-bottom: 2em;
 }
@@ -283,31 +337,9 @@ hr {
 	margin-right: 2em;
 }
 
-#article-text {
-	margin-left: 3em;
-	margin-right: 3em;
-}
-
-#article-text a, a:link, a:visited, a:active, a:-webkit-any-link {
-	text-decoration: none !important;
-	color: #191919;
-}
-
-#article-text h1 {
-	max-width: 70%;
-	color: #191919;
-}
-
-#article-text h4 {
-	max-width: 70%;
-	margin-bottom: -10px;
-}
-
 .lead-in {
-	margin-left: 10%;
-	margin-right: 10%;
+	font-family: Akzidenz-Grotesk BQ Medium;
 	font-size: 18px;
-	padding-bottom: 3em;
 }
 
 #feature-text p {
@@ -325,14 +357,33 @@ hr {
 }
 
 #feature-button {
-	float: right;
-    top: 0px;
-    right: 0px;
-    position: absolute;
-    margin: 1em
+	background-color: white;
+	color: #191919;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 /*--------------- ARTICLE ---------------*/
+
+#article-text {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#article-text a, a:link, a:visited, a:active, a:-webkit-any-link {
+	text-decoration: none !important;
+	color: #191919;
+}
+
+#article-text h1 {
+	max-width: 550px;
+	color: #191919;
+}
+
+#article-text h4 {
+	max-width: 70%;
+	margin-bottom: -12px;
+}
 
 #article-margin {
 	margin: 5%;
@@ -340,12 +391,15 @@ hr {
 
 #article-margin p {
 	max-width: 650px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: .7em;
 }
 
 .article-image {
 	text-align: center;
+	margin-left: -5%;
+    margin-right: -5%;
 }
 
 .article-image img{
@@ -355,6 +409,14 @@ hr {
 	max-height: 100%;
     width: 100%;
     margin: auto;
+}
+
+#article-source a {
+	color: magenta !important;
+}
+
+#answer {
+	margin-bottom: 1em;
 }
 
 /*--------------- FILTER ---------------*/
@@ -378,6 +440,7 @@ hr {
 	width: 25vw;
 	background: white;
     border-radius: 11px;
+    max-width: 31%;
 }
 
 .feature img, .post img {
@@ -415,8 +478,12 @@ hr {
 }
 
 .post-text h3 {
-	padding-top: 1em;
-	margin: 1em;
+	/*padding-top: 1em;
+	margin: 1em;*/
+	padding-top: 14px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    margin: 12px;
 }
 
 .post-text h4 {
@@ -439,6 +506,14 @@ hr {
 	top: -114px;
 }
 
+#article-text-container .banner:nth-child(2n) {
+	top: -76px;
+}
+
+#article-text-container .banner:nth-child(3n) {
+	top: -114px;
+}
+
 .banner {
 	position: absolute;
 	top: -38px;
@@ -447,12 +522,16 @@ hr {
 }
 
 .banner h3 {
+	font-family: Project Colony;
+	/*font-weight: normal;*/
 	margin-top: 0px;
 	/*color: white;*/
+    font-size: 9px;
+    opacity: 0.7;
 }
 
 .interview {
-	background-color: magenta;
+	background-color: red;
 }
 
 .interview h3 {
@@ -483,8 +562,16 @@ hr {
 	color: #191919;
 }
 
-.branding {
+.literature {
 	background-color: aqua;
+}
+
+.literature h3{
+	color: #191919;
+}
+
+.branding {
+	background-color: magenta;
 }
 
 .branding h3{
@@ -500,14 +587,18 @@ hr {
 /*--------------- ABOUT ---------------*/
 
 .about-content {
-	height: 100vh;
 	background: white;
-	border-radius: 10px 10px 0px 0px;
-	width: 50vw;
+	border-radius: 10px;
+	width: 50%;
 }
 
 #about-text {
+	padding: 1em;
 	margin: 1em;
+}
+
+#about-text .button-link {
+	color: white;
 }
 
 /*--------------- FOOTER ---------------*/
@@ -519,6 +610,13 @@ hr {
 
 #footer {
 	text-align: center;
+}
+
+#footer p {
+	text-align: left;
+	color: gray;
+	font-size: 9px;
+	line-height: 1.5;
 }
 
 #footer-button {
@@ -538,12 +636,16 @@ hr {
 
 /*--------------- ANIMATION ---------------*/
 
-.post:hover, .feature:hover {
+.post:hover {
 	position:relative;
     left: 0px; top:-5px;
     animation:post-sel .5s;
     -moz-animation:post-sel .5s;
     -webkit-animation:post-sel .5s;
+}
+
+.post:hover h3 {
+	/*font-family: Akzidenz-Grotesk BQ Bold Extended;*/
 }
 
 @keyframes post-sel {
@@ -559,7 +661,7 @@ hr {
     to{top:-5px;} 
 }
 
-.post, .feature {
+.post {
 	position:relative;
     left: 0px; top:0px;
     animation:post-sel-back .5s;
@@ -584,6 +686,10 @@ hr {
 
 /*--------------- FILTER ---------------*/
 
+.filter-button {
+	cursor: pointer;
+}
+
 #filter a {
 	color: #191919 !important;
 }
@@ -600,6 +706,10 @@ hr {
 .filter-button.active {
   background-color: white !important;
   color: #191919 !important;
+}
+
+.active:hover {
+	background-color: magenta !important;
 }
 
 
