@@ -116,7 +116,7 @@ h4 {
 p {
 	font-family: Akzidenz-Grotesk BQ Regular;
 	letter-spacing: 0.02em;
-	line-height: 1.1em;
+	line-height: 1.3em;
 }
 
 hr {
@@ -126,6 +126,9 @@ hr {
 
 .divider {
 	border-top: 1px solid #191919;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #main-head h1 {
@@ -318,7 +321,7 @@ hr {
 #feature-text-container, #article-text-container {
 	position: relative;
 	background-color: white;
-	border-radius: 0px, 0px, 10px, 10px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 #feature-text-container {
@@ -390,7 +393,7 @@ hr {
 }
 
 #article-margin p {
-	max-width: 650px;
+	max-width: 550px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: .7em;
@@ -415,8 +418,9 @@ hr {
 	color: magenta !important;
 }
 
-#answer {
+.answer {
 	margin-bottom: 1em;
+	margin-top: -1em;
 }
 
 /*--------------- FILTER ---------------*/
