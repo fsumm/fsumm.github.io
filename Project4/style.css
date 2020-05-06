@@ -29,6 +29,11 @@ body {
 	src: url(../fonts/ProjectColonyGX.ttf);
 }
 
+@font-face {
+	font-family: Project Colony Clean;
+	src: url(../fonts/ProjectColonyCleanGX.ttf);
+}
+
 nav{
 	border-top: 7px solid magenta;
 	text-align: right;
@@ -67,6 +72,7 @@ nav a:hover {
 }
 
 nav a:visited {
+	-moz-text-decoration: none !important;
 	text-decoration: none !important;
 	color: #191919;
 }
@@ -79,7 +85,7 @@ main {
 }
 
 h1 {
-	font-family: Project Colony, Akzidenz-Grotesk BQ Bold Extended;
+	font-family: Project Colony Clean, Akzidenz-Grotesk BQ Bold Extended;
 	/*font-family: Akzidenz-Grotesk BQ Bold Extended;*/
 	font-size: 2em;
 	/*font-weight: normal;*/
@@ -90,7 +96,7 @@ h1 {
 }
 
 h2 {
-	font-family: Project Colony;
+	font-family: Project Colony Clean;
 	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -99,7 +105,7 @@ h2 {
 }
 
 h3 {
-	font-family: Project Colony;
+	font-family: Project Colony Clean;
 	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
@@ -111,7 +117,7 @@ h3 {
 }
 
 h4 {
-	font-family: Project Colony;
+	font-family: Project Colony Clean;
 	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
@@ -139,6 +145,7 @@ hr {
 }
 
 #main-head h1 {
+	font-family: Project Colony;
 	letter-spacing: 0.075em;
 }
 
@@ -372,7 +379,7 @@ hr {
 }
 
 .button-link {
-	font-family: Project Colony;
+	font-family: Project Colony Clean;
 	/*font-family: Akzidenz-Grotesk BQ Medium Extended;*/
 	font-size: 12px;
 	text-transform: uppercase;
@@ -426,6 +433,14 @@ hr {
 
 .post-flex > .post {
 	flex: 1 1 30%;
+}
+
+nav a, #article-source a, .post-flex a {
+	text-decoration: none !important;
+}
+
+nav a {
+	color: #191919;
 }
 
 /*--------------- FEATURE ---------------*/
@@ -587,6 +602,10 @@ hr {
 
 /*--------------- POSTS ---------------*/
 
+.post:hover h3, .post:hover h4 {
+	font-family: Project Colony;
+}
+
 .post {
 	margin: 10px;
 	margin-bottom: 10px;
@@ -675,7 +694,7 @@ hr {
 }
 
 .banner h3 {
-	font-family: Project Colony;
+	font-family: Project Colony Clean;
 	/*font-weight: normal;*/
 	margin-top: 0px;
 	/*color: white;*/
