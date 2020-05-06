@@ -45,6 +45,10 @@ nav h3 {
 	padding-left: 0px;
 }
 
+a, a:link, a:visited, a:active, a:-webkit-any-link {
+	text-decoration: none !important;
+}
+
 nav a {
 	text-decoration: none !important;
 	padding-left: 1em;
@@ -164,6 +168,12 @@ hr {
 	    margin-right: 1em !important;
 	}
 
+	.article-image {
+	    text-align: center;
+	    margin-left: -1em;
+	    margin-right: -1em;
+	}
+
 	#article-margin {
     	margin: 0% !important;
     }
@@ -226,6 +236,15 @@ hr {
 	main {
 		margin-left: 2%;
 		margin-right: 2%;
+	}
+
+	#article-margin {
+    	margin: 0% !important;
+    }
+
+    .article-image {
+    	margin-left: 0% !important;
+    	margin-right: 0% !important;
 	}
 
 	#article-text {
@@ -665,7 +684,7 @@ hr {
 }
 
 .interview {
-	background-color: red;
+	background-color: #ff008c;
 }
 
 .interview h3 {
@@ -673,7 +692,7 @@ hr {
 }
 
 .movies {
-	background-color: yellow;
+	background-color: #ff0037;
 }
 
 .movies h3 {
@@ -681,7 +700,7 @@ hr {
 }
 
 .music {
-	background-color: orange;
+	background-color: #ff6700;
 }
 
 .music h3 {
@@ -689,7 +708,7 @@ hr {
 }
 
 .typography {
-	background-color: lime;
+	background-color: #ffbc00;
 }
 
 .typography h3{
@@ -697,7 +716,7 @@ hr {
 }
 
 .literature {
-	background-color: aqua;
+	background-color: #fff200;
 }
 
 .literature h3{
