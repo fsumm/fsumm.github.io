@@ -7,6 +7,11 @@ body {
 }
 
 @font-face {
+	font-family: NB Form;
+	src: url(../fonts/nb_form-webfont.woff);
+}
+
+@font-face {
 	font-family: Akzidenz-Grotesk BQ Bold Extended;
     src: url(../fonts/AkzidenzGrotesk-BoldExtended.otf);
 }
@@ -37,7 +42,14 @@ body {
 }
 
 nav{
-	margin: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+nav [src="assets/nav-divider.png"] {
+	position: relative;
+    top: 9px;
+    height: 30px;
 }
 
 
@@ -48,24 +60,26 @@ a, a:link, a:visited, a:active, a:-webkit-any-link {
 main {
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 h1 {
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+	font-family: Akzidenz-Grotesk BQ Bold Extended, Helvetica Neue, Helvetica, Sans-Serif;
+	text-transform: uppercase;
 	font-size: 4em;
 	line-height: 1em;
 	margin-top: 0em;
 }
 
 h2 {
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+	font-family: Akzidenz-Grotesk BQ Bold Extended, Helvetica Neue, Helvetica, Sans-Serif;
+	text-transform: uppercase;
 	font-size: 1.5em;
 }
 
 h3 {
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+	font-family: Akzidenz-Grotesk BQ Bold Extended, Helvetica Neue, Helvetica, Sans-Serif;
+	text-transform: uppercase;
 	font-size: 12px;
 	hyphens: auto;
 	-webkit-hyphens: auto;
@@ -73,7 +87,8 @@ h3 {
 }
 
 h4 {
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+	font-family: Akzidenz-Grotesk BQ Bold Extended, Helvetica Neue, Helvetica, Sans-Serif;
+	text-transform: uppercase;
 	font-size: 12px;
 }
 
@@ -373,7 +388,7 @@ hr {
 #logo {
 	width: 60px;
 	position: relative;
-    top: 9px;
+    top: 7px;
     left: -7px;
 }
 
@@ -583,6 +598,7 @@ nav a {
 }
 
 .post {
+	position: relative;
 	background: white;
   	--notchSize: 20px;
   
@@ -824,6 +840,8 @@ nav a {
 #delivery {
 	height: 400px;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
 	background-image: url("assets/wireframe-comp-1.png");
 }
 
@@ -947,6 +965,23 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection {
 	cursor: not-allowed;
 }
 
+.noise {
+	object-fit: cover;
+	width: 100%;
+}
+
+.post-divider {
+	position: relative;
+	text-align: center;
+}
+
+#post-divider-2 {
+	transform: rotate(180deg);
+}
+
+[src="assets/feature-bracket.png"] {
+	margin-top: -40px;
+}
 
 
 
