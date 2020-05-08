@@ -37,12 +37,9 @@ body {
 }
 
 nav{
-
+	margin: 5%;
 }
 
-nav h3 {
-
-}
 
 a, a:link, a:visited, a:active, a:-webkit-any-link {
 	text-decoration: none !important;
@@ -311,6 +308,12 @@ hr {
   		margin-right: auto;
   	}
 
+  	nav {
+  		max-width: 1080px;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+
 	.post-img-container {
     	height: 252px !important;
     }
@@ -344,7 +347,7 @@ hr {
 	    calc(100%) 0%, 
 	    100% var(--notchSize), 
 	    100% calc(100% - var(--notchSize)), 
-	    calc(98% - var(--notchSize)) 100%, 
+	    calc(100% - var(--notchSize)) 100%, 
 	    var(--notchSize) 150%, 
 	    0% calc(128%)
     );
@@ -369,6 +372,9 @@ hr {
 
 #logo {
 	width: 60px;
+	position: relative;
+    top: 9px;
+    left: -7px;
 }
 
 .subhead {
@@ -789,21 +795,29 @@ nav a {
 
 #main-head {
 	background-size: cover;
-	background-image: url("assets/wireframe-comp-1.png");
+	background-image: url("assets/wireframe-comp-1.png"), linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(242,242,242,1) 63%, rgba(242,242,242,1) 100%);
+
 	height: 500px;
+	background-repeat: no-repeat;
+	background-position: right top;
 }
 
 #main-head .post-content {
 	max-width: 40%;
+	padding-top: 1.5em;
 }
 
 #nerg {
 	background-size: cover;
-	background-image: url("assets/wireframe-comp-2.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url("assets/nerg-banner.png");
 }
 
 #top10 {
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
 	background-image: url("assets/wireframe-comp-2.png");
 }
 
@@ -826,7 +840,7 @@ nav a {
 	margin-right: auto;
 	margin-bottom: 20px;
 	text-align: center;
-	max-width: 700px;
+	max-width: 800px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -854,7 +868,10 @@ nav a {
 
 .icon-container img {
 	max-width: 100px;
-	max-height: 100px;
+}
+
+#feature .icon-container img {
+	max-width: 70px;
 }
 
 
@@ -926,8 +943,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection {
  	background: var(--highlight-color); /* Gecko Browsers */
 }
 
-
-
+.not-allowed:hover {
+	cursor: not-allowed;
+}
 
 
 
