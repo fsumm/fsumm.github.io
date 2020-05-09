@@ -102,6 +102,15 @@ hr {
 	border: 0px;
 }
 
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}
+
 .divider {
 	border-top: 1px solid #191919;
 	max-width: 550px;
@@ -414,7 +423,7 @@ nav a, #article-source a, .post-flex a {
 
 nav a {
 	margin: 1em;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #191919;
 }
 
@@ -813,7 +822,6 @@ nav a {
 	background-size: cover;
 	background-image: url("assets/wireframe-comp-1.png"), linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(242,242,242,1) 63%, rgba(242,242,242,1) 100%);
 
-	height: 500px;
 	background-repeat: no-repeat;
 	background-position: right top;
 }
@@ -842,7 +850,7 @@ nav a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-image: url("assets/wireframe-comp-1.png");
+	background-image: url("assets/wireframe-comp-1.png"), linear-gradient(0deg, rgb(242, 242, 242) 31%, rgb(242,242,242) 63%, rgb(255,255,255) 100%)
 }
 
 .center-header {
@@ -930,6 +938,8 @@ input::placeholder {
     color: white;
     background-color: black;
     padding: 24px;
+    cursor: not-allowed;
+    transition: all 0.3s;
 	--notchSize: 10px;
   
 	clip-path: 
@@ -945,6 +955,11 @@ input::placeholder {
     );
 }
 
+#signup-form [type="submit"]:hover {
+	background-color: var(--a-hover-color);
+	transition: all 0.3s;
+}
+
 .post-content {
 	max-width: 50%;
 	padding: 1.5em;
@@ -952,12 +967,14 @@ input::placeholder {
 }
 
 p::selection, sup::selection, a::selection, 
-h1::selection, h2::selection, h3::selection, h4::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, 
+input::selection, br::selection {
  	background: var(--highlight-color); /* WebKit/Blink Browsers */
 }
 
 p::-moz-selection, sup::-moz-selection, a::-moz-selection, 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection 
+ {
  	background: var(--highlight-color); /* Gecko Browsers */
 }
 
@@ -980,9 +997,34 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection {
 }
 
 [src="assets/feature-bracket.png"] {
-	margin-top: -40px;
+	width: 100%;
+	max-width: 780px;
+	position: relative;
+	top: -25px;
 }
 
+[src="assets/button-ornament.png"] {
+	position: relative;
+	top: 14px;
+}
+
+[src="assets/dash-line.png"] {
+	position: relative;
+	top: -30px;
+}
+
+[src="assets/ornament-1.png"] {
+	position: relative;
+	top: 20px;
+}
+
+[src="assets/corner-ornament.png"] {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
 
 
 
