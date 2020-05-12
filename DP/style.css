@@ -864,7 +864,8 @@ nav a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-image: url("assets/wireframe-comp-2.png");
+	background-image: url("assets/nutri-wireframe.png");
+	background-color: #43caff;
 }
 
 #delivery {
@@ -872,6 +873,14 @@ nav a {
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-image: url("assets/delivery.png"), linear-gradient(0deg, rgb(242, 242, 242) 31%, rgb(242,242,242) 63%, rgb(255,255,255) 100%)
+}
+
+#nerg-showcase {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(250, 250, 250);
+	background-image: url("assets/nerg-wireframe.png");
 }
 
 .center-header {
@@ -1116,4 +1125,36 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection
 	text-align: right;
 	padding-bottom: 30px;
 }
+
+#product-showcase .post{
+	max-width: 40%;
+}
+
+#description {
+	max-width: 100%;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.centered-images {
+	text-align: center;
+	width: 100%;
+}
+
+.centered-images img {
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
