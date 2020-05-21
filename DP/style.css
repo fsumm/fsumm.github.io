@@ -860,6 +860,22 @@ nav a {
 	background-image: url("assets/nerg-banner.png");
 }
 
+#nerg-2 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url("assets/nerg-wireframe-2.png");
+	background-color: #f7ec33;
+}
+
+#nutri {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url("assets/mr-wireframe.png");
+	background-color: lime;
+}
+
 #top10 {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1005,13 +1021,13 @@ input::placeholder {
 
 p::selection, sup::selection, a::selection, 
 h1::selection, h2::selection, h3::selection, h4::selection, 
-input::selection, br::selection {
+input::selection, br::selection, em::selection {
  	background: var(--highlight-color); /* WebKit/Blink Browsers */
 }
 
 p::-moz-selection, sup::-moz-selection, a::-moz-selection, 
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection 
- {
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection,
+input::-moz-selection, br::-moz-selection, em::-moz-selection {
  	background: var(--highlight-color); /* Gecko Browsers */
 }
 
@@ -1070,15 +1086,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection
 	height: 300px;
 }
 
-#nutri {
-	background-color: aqua;
-}
-
-#nutri-flavor {
-	background-color: lime;
-}
-
 #nutri-mobile {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-image: url("assets/nutri-mobile.png");
 	background-color: orange;
 }
 
